@@ -1,8 +1,7 @@
-<script lang="ts" setup></script>
-
-<script lang="ts">
-const solanaWeb3 = require("@solana/web3.js");
-console.log(solanaWeb3);
+<script lang="ts" setup>
+  const solanaWeb3 = await useSolana();
+  console.log('Component: Solana', solanaWeb3);
+  
 </script>
 
 <template>
