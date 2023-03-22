@@ -108,7 +108,7 @@ const onClick = async () => {
         </button>
       </div>
     </div>
-    <div class="flex flex-col py-2">
+    <div class="flex flex-col py-2 w-full p-28">
       <div v-for="step, index in steps" :key="index" class="text-lg font-mono font-normal">
         {{ step.title }}
       </div>

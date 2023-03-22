@@ -9,12 +9,13 @@
 </script>
 <template>
   <div class="flex w-full h-full flex-col justify-between items-center space-x-1">
-    <h1 class="p-5 text-2xl font-mono">Click following utils to redirect</h1>
+    <h1 class="p-5 text-2xl font-mono">Get started by clicking any of following utils</h1>
     <nuxt-link 
       v-for="route, index in routes" :key="index" 
       :to="route.link" 
       class="p-5">
-      <a class="text-4xl font-mono underline-offset-3">{{route.title}}</a>
+      <a class="text-4xl font-mono underline">{{route.title}}</a>
     </nuxt-link>
+    <h1 class="pt-20 text-xl font-mono from-yellow-600">created by Panth</h1>
   </div>
 </template>
