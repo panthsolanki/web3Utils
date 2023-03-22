@@ -78,8 +78,8 @@ const onClick = async () => {
   <div class="flex flex-1 flex-col items-center justify-center bg-slate-200">
     <div class="flex-1 flex-col p-8 w-full">
       <div class="flex items-center justify-center">
-        <label class="block text-gray-700 text-lg font-bold mb-2" for="username">
-          Airdrop to {{ cluster.title }}
+        <label class="block text-gray-700 text-lg font-mono font-bold mb-2" for="username">
+          Airdrop to your {{ cluster.title }} account
         </label>
       </div>
       <div class="flex items-center justify-center">
@@ -94,20 +94,22 @@ const onClick = async () => {
                   text-gray-700 
                   bg-white
                   leading-tight 
+                  font-mono font-normal
                   focus:outline-none focus:shadow-outline" id="pubKey" type="text" :disabled="isAirDropInProgress"
           :placeholder="`Your ${cluster.title} Public Key`" v-model="pubKey">
         <button :disabled="isAirDropInProgress" class="
                   bg-blue-500 hover:bg-blue-700 
-                  text-white font-bold 
+                  text-white
                   mr-2 py-2 px-3 
                   rounded 
+                  font-mono font-normal
                   focus:outline-none focus:shadow-outline" type="button" @click="onClick">
-          Drop
+          AirDrop 1 SOL
         </button>
       </div>
     </div>
     <div class="flex flex-col py-2">
-      <div v-for="step, index in steps" :key="index">
+      <div v-for="step, index in steps" :key="index" class="text-lg font-mono font-normal">
         {{ step.title }}
       </div>
       <div v-if="successTxHash" class="mt-4">

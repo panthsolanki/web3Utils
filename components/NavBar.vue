@@ -2,7 +2,9 @@
 
 <template>
   <header class="sticky top-0 z-50 flex justify-between items-center space-x-1 border-b bg-white p-4 shadow-md">
-    <a href="" class="text-3xl font-mono">3d utils</a>
+    <nuxt-link to="/">
+      <h1 class="text-3xl font-mono">3d utils</h1>
+    </nuxt-link>
   </header>
 </template>
 
