@@ -16,6 +16,6 @@
       class="p-5">
       <a class="text-4xl font-mono underline">{{route.title}}</a>
     </nuxt-link>
-    <h1 class="pt-20 text-xl font-mono from-yellow-600">created by Panth</h1>
+    <h1 class="pt-20 text-xl font-mono">created by Panth</h1>
   </div>
 </template>

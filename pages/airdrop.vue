@@ -87,21 +87,22 @@ const onClick = async () => {
                   shadow
                   appearance-none
                   border
-                  rounded
+                  rounded-xl
                   w-full
                   max-w-md 
                   mr-2 py-2 px-3
                   text-gray-700 
                   bg-white
-                  leading-tight 
+                  leading-tint
+                  md:text-xl md:leading-loose
                   font-mono font-normal
                   focus:outline-none focus:shadow-outline" id="pubKey" type="text" :disabled="isAirDropInProgress"
           :placeholder="`Your ${cluster.title} Public Key`" v-model="pubKey">
         <button :disabled="isAirDropInProgress" class="
                   bg-blue-500 hover:bg-blue-700 
                   text-white
-                  mr-2 py-2 px-3 
-                  rounded 
+                  mr-2 py-4 px-5 
+                  rounded-lg 
                   font-mono font-normal
                   focus:outline-none focus:shadow-outline" type="button" @click="onClick">
           AirDrop 1 SOL
