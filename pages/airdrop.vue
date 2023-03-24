@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { useSolanaStore } from '@/stores/solanaStore'
+import { useSolanaStore } from '~~/stores/useSolanaStore'
 
 const pubKey = ref<string>('');
 const isAirDropInProgress = ref<boolean>(false);
