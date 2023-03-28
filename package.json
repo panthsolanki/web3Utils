@@ -15,8 +15,10 @@
   },
   "dependencies": {
     "@pinia/nuxt": "^0.4.7",
+    "@solana/wallet-adapter-wallets": "^0.19.16",
     "@solana/web3.js": "^1.74.0",
-    "pinia": "^2.0.33"
+    "pinia": "^2.0.33",
+    "solana-wallets-vue": "^0.6.0"
   },
   "eslintConfig": {
     "root": true,
