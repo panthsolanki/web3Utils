@@ -13,7 +13,7 @@ const walletOptions = {
     new SlopeWalletAdapter(),
     new SolflareWalletAdapter({ network: WalletAdapterNetwork.Devnet }),
   ],
-  autoConnect: true,
+  autoConnect: false,
 };
 
 export default defineNuxtPlugin((nuxtApp: any) => {
